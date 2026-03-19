@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO dinámico — actualizado por JS según el servicio -->
+    <title id="pageTitle">Servicio | Espai Únic – Sala de Eventos</title>
+    <meta id="metaDesc" name="description"
+        content="Descubre los detalles y precios de nuestros servicios en Espai Únic.">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Espai Únic">
+    <link id="canonical" rel="canonical" href="https://espai-unic.com/service-detail.html">
+
+    <!-- Open Graph dinámico -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Espai Únic">
+    <meta id="ogTitle" property="og:title" content="Espai Únic | Servicio">
+    <meta id="ogDesc" property="og:description" content="Descubre nuestros servicios en Espai Únic.">
+    <meta property="og:image" content="https://espai-unic.com/images/og-image.webp">
+    <meta id="ogUrl" property="og:url" content="https://espai-unic.com/service-detail.html">
+    <meta property="og:locale" content="es_ES">
+
+    <!-- hreflang -->
+    <link rel="alternate" hreflang="es" href="https://espai-unic.com/service-detail.html">
+    <link rel="alternate" hreflang="es-ES" href="https://espai-unic.com/service-detail.html">
+
+    <link rel="stylesheet" href="styles.css">
+    <!-- Ionicons for icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- Inyección SEO dinámica por servicio -->
+    <script>
+        (function () {
+            const sid = new URLSearchParams(window.location.search).get('service');
+            const metaMap = {
+                '1': { title: 'Fiestas de Cumpleaños Infantil | Espai Únic', desc: 'Sala privada de 215m² decorada para el cumpleaños de tu peque. Zona Chikipark, decoración temática y celebración 100% a medida. Desde 160€.' },
+                '2': { title: 'Chikipark – Zona de Juegos Infantiles | Espai Únic', desc: 'Parque de bolas, toboganes y colchonetas dentro de nuestra sala. Los niños juegan seguros mientras los adultos disfrutan. Incluido en el alquiler de sala.' },
+                '3': { title: 'Animación y Payasos para Fiestas Infantiles | Espai Únic', desc: 'Animadores y payasos profesionales para fiestas de cumpleaños: globoflexia, pintacaras y juegos en grupo para niños.' },
+
+                '5': { title: 'Baby Shower en Sala Privada | Espai Únic', desc: 'Celebra la llegada del bebé en un entorno íntimo y acogedor. Sala privada de 215m² con decoración a medida. Desde 160€.' },
+                '6': { title: 'Eventos Temáticos Personalizados | Espai Únic', desc: 'Sala decorada con temática personalizada: piratas, princesas, superhéroes y más. Decoración completa y ambientación a medida desde 200€.' },
+                '7': { title: 'Pack DJ Superior – 600€ | Espai Únic', desc: 'DJ profesional 4h con sonido de alta potencia (4 altavoces 15" + 2 subwoofer 18"), iluminación espectacular y truss 4×3m con TV 65". IVA no incluido.' },
+                '8': { title: 'Pack DJ Esencial – 400€ | Espai Únic', desc: 'DJ profesional 4h con sonido de calidad (2 altavoces 15"), iluminación con cabezas móviles y láser. Transporte, montaje y desmontaje incluidos. IVA no incluido.' },
+                '9': { title: 'Espectáculo de Magia para Fiestas | Espai Únic', desc: 'Show de magia infantil 50 minutos para niños de 5 a 11 años (265€) o magia de cerca en evento privado 1 hora (215€).' },
+                '10': { title: 'Alquiler Sala de Eventos 215m² | Espai Únic', desc: 'Sala privada de 215m² con WiFi, sistema de sonido, nevera, cafetera y zona Chikipark. Desde 160€ con limpieza incluida. Disponible mañana, tarde y noche.' },
+                '11': { title: 'La Pilar – Animación para Adultos | Espai Únic', desc: 'Sesión guionizada de animación teatral exclusiva para adultos. Una experiencia interactiva, divertida y totalmente personalizada a medida. 280€.' },
+            };
+            const m = metaMap[sid];
+            if (m) {
+                const url = 'https://espai-unic.com/service-detail.html?service=' + sid;
+                document.getElementById('pageTitle').textContent = m.title;
+                document.getElementById('metaDesc').setAttribute('content', m.desc);
+                document.getElementById('canonical').setAttribute('href', url);
+                document.getElementById('ogTitle').setAttribute('content', m.title);
+                document.getElementById('ogDesc').setAttribute('content', m.desc);
+                document.getElementById('ogUrl').setAttribute('content', url);
+            }
+        })();
+    </script>
+</head>
+
+
+<body>
+
+
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <a href="index.html" class="nav-logo">
+            <img src="images/logo-espai-unic-esparreguera.webp" alt="Espai Únic Logo"
+                style="height: 44px; width: auto; object-fit: contain; filter: drop-shadow(0 1px 4px rgba(0,0,0,0.5));">
+        </a>
+
+        <div class="nav-right">
+            <div class="nav-links-container" id="navLinks">
+                <a href="index.html#servicios" class="nav-link">Servicios</a>
+                <a href="index.html#sobre-nosotros" class="nav-link">Nosotros</a>
+                <a href="index.html#contacto" class="nav-link">Contacto</a>
+            </div>
+            <button class="hamburger-menu" id="hamburgerBtn" aria-label="Abrir menú">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- SERVICE DETAIL HERO -->
+    <section class="service-detail-hero">
+        <div class="hero-bg-glow"></div>
+        <div class="detail-container fade-in-up">
+            <div class="detail-header">
+                <a href="index.html#servicios" class="back-link">
+                    <ion-icon name="arrow-back-outline"></ion-icon> Volver a servicios
+                </a>
+                <h1 id="serviceTitle" class="hero-title text-gradient">X</h1>
+            </div>
+
+            <div class="detail-grid">
+                <div class="detail-visual">
+                    <img id="serviceImage" src="" alt="Servicio Image" class="premium-img">
+                </div>
+                <div class="detail-info glass-card">
+                    <h2>Descripción Detallada</h2>
+                    <p id="serviceDesc">X</p>
+
+                    <div class="pricing-card">
+                        <h3>Planes y Precios</h3>
+                        <div id="pricingItems"></div>
+                    </div>
+
+                    <a id="reserveBtn" href="#" target="_blank" class="btn-primary"
+                        style="width: 100%; margin-top: 30px; text-align: center;">Reservar este servicio</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer
+        style="padding: 50px 5%; text-align: center; border-top: 1px solid rgba(255,255,255,0.05); color: var(--text-tertiary);">
+        <p>&copy; 2026 Espai Únic. Todos los derechos reservados.</p>
+        <div style="margin-top: 20px; display: flex; justify-content: center; gap: 20px;">
+            <a href="https://www.instagram.com/espaiunic25?igsh=ZWtyN2FidnZ4OWEz" target="_blank"
+                style="color: white; font-size: 1.5rem;"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="https://www.facebook.com/people/Espai-%C3%9Anic-sala-polivalent-i-festes/61588015478223/"
+                target="_blank" style="color: white; font-size: 1.5rem;"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="https://wa.me/34695613985" target="_blank" style="color: white; font-size: 1.5rem;"><ion-icon
+                    name="logo-whatsapp"></ion-icon></a>
+        </div>
+        <div style="margin-top: 15px; font-size: 0.9rem;">
+            <p>Cami Ral, 11 semisótano, 08292 Esparreguera, Barcelona</p>
+            <p>Tel: +34 695 613 985</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Marcar que venimos de una página de servicio → skip welcome en index
+        document.addEventListener('click', (e) => {
+            const a = e.target.closest('a[href]');
+            if (a && a.href.includes('index.html')) {
+                sessionStorage.setItem('skipWelcome', '1');
+            }
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const params = new URLSearchParams(window.location.search);
+            const sid = params.get('service');
+
+            const services = {
+                '1': {
+                    title: 'Fiestas de Cumpleaños',
+                    img: 'images/fiesta-cumpleanos-infantil-espai-unic.webp',
+                    desc: 'Celebra el cumpleaños de tus peques en un espacio privado de 215m², con decoración temática, zona de juegos y todo lo que necesitas para una fiesta perfecta.',
+                    pricing: [
+                        { name: 'L–J y V mañana', value: '160€ · limpieza incluida' },
+                        { name: 'V tarde + S y D (mañana/tarde)', value: '180€ + 20€ limpieza' },
+                        { name: 'V noche y S noche', value: '250€ + 20€ limpieza' },
+                        { name: 'Festivos mañana (12:00–19:00)', value: '390€' },
+                        { name: 'Festivos noche (20:00–03:00)', value: '420€' },
+                        { name: 'Hora extra', value: '30€' },
+                        { name: 'Fianza L–D', value: '40€' },
+                        { name: 'Fianza V–S noche', value: '80€' },
+                        { name: 'Fianza festivos', value: '100€' },
+                        { name: '+ Pack Catering Básico', value: '50€ (opcional)' },
+                    ]
+                },
+                '2': {
+                    title: 'Chikipark',
+                    img: 'images/chikipark-zona-juegos-infantiles-espai-unic.webp',
+                    desc: 'Zona de juegos infantiles dentro de la sala para que los niños disfruten de toboganes, colchonetas y actividades supervisadas mientras los adultos descansan.',
+                    pricing: [
+                        { name: 'Incluido en alquiler de sala', value: 'Sin coste adicional' },
+                        { name: 'Horario mañana', value: '10:30 – 14:30' },
+                        { name: 'Horario tarde', value: '16:30 – 20:30' },
+                        { name: 'Horario noche', value: '21:30 – 01:30' },
+                    ]
+                },
+                '3': {
+                    title: 'Animación y Payasos',
+                    img: 'images/animacion-payasos-fiestas-infantiles-espai-unic.webp',
+                    desc: 'Animadores y payasos profesionales para hacer de tu fiesta un espectáculo. Juegos, globoflexia, pintacaras y mucho más para los más pequeños.',
+                    pricing: [
+                        { name: 'Show 1 hora', value: 'Consultar disponibilidad' },
+                        { name: 'Show 2 horas', value: 'Consultar disponibilidad' },
+                        { name: 'Personalizado', value: 'A medida' },
+                    ]
+                },
+
+                '5': {
+                    title: 'Baby Showers',
+                    img: 'images/baby-shower-evento-privado-espai-unic.webp',
+                    desc: 'Celebra la llegada del nuevo bebé en un ambiente íntimo y acogedor. Decoración a medida, sala privada y todos los detalles para un momento especial.',
+                    pricing: [
+                        { name: 'L–J y V mañana', value: '160€ · limpieza incluida' },
+                        { name: 'V tarde + S y D (mañana/tarde)', value: '180€ + 20€ limpieza' },
+                        { name: 'V noche y S noche', value: '250€ + 20€ limpieza' },
+                        { name: 'Festivos mañana (12:00–19:00)', value: '390€' },
+                        { name: 'Festivos noche (20:00–03:00)', value: '420€' },
+                        { name: 'Hora extra', value: '30€' },
+                        { name: 'Fianza L–D', value: '40€' },
+                        { name: 'Fianza V–S noche', value: '80€' },
+                        { name: 'Fianza festivos', value: '100€' },
+                        { name: '+ Pack Catering Básico', value: '50€ (opcional)' },
+                    ]
+                },
+                '6': {
+                    title: 'Eventos Temáticos',
+                    img: 'images/decoracion-eventos-tematicos-personalizados.webp',
+                    desc: 'Transforma la sala en cualquier universo que imagines: piratas, princesas, superhéroes, unicornios… Decoración completa y ambientación temática a medida.',
+                    pricing: [
+                        { name: 'Alquiler sala + decoración básica', value: 'Desde 200€' },
+                        { name: 'Decoración premium personalizada', value: 'Consultar' },
+                        { name: 'Hora extra', value: '30€' },
+                    ]
+                },
+                '7': {
+                    title: 'Pack DJ Superior',
+                    img: 'images/pack-dj-superior-iluminacion-profesional.webp',
+                    desc: 'El pack más completo para una noche épica. DJ/Speaker profesional con sonido de alta potencia, iluminación espectacular con cabezas móviles, láser y flash, y estructura truss con TV 65".',
+                    pricing: [
+                        { name: 'Pack Superior (4h)', value: '600€ (IVA no incl.)' },
+                        { name: 'Hora extra', value: '+100€/h (hasta 8h)' },
+                        { name: 'Sonido', value: '4 altavoces 15" + 2 subwoofer 18"' },
+                        { name: 'Iluminación', value: '4 cabezas beamZ Panther 70 · 2 truss led FX · Laser EL-400RGB · Flash FLM 202 · 4 focos par led' },
+                        { name: 'Estructura', value: 'Truss 4×3m · Stand DJ con TV 65"' },
+                        { name: 'Complementos', value: 'Máquina humo · 2 micros inalámbricos' },
+                        { name: 'Incluye', value: 'Transporte, montaje y desmontaje' },
+                    ]
+                },
+                '8': {
+                    title: 'Pack DJ Esencial',
+                    img: 'images/equipo-sonido-dj-esencial.webp',
+                    desc: 'Todo lo esencial para una gran fiesta. DJ/Speaker profesional con sonido de calidad, iluminación con cabezas móviles y láser, y estructura truss.',
+                    pricing: [
+                        { name: 'Pack Esencial (4h)', value: '400€ (IVA no incl.)' },
+                        { name: 'Hora extra', value: '+100€/h (hasta 8h)' },
+                        { name: 'Sonido', value: '2 altavoces 15"' },
+                        { name: 'Iluminación', value: '4 cabezas beamZ Panther 70 · 2 truss led FX · Laser EL-400RGB · Flash FLM 202' },
+                        { name: 'Estructura', value: 'Truss 4×3m · Stand mesa DJ' },
+                        { name: 'Incluye', value: 'Transporte, montaje y desmontaje' },
+                    ]
+                },
+                '9': {
+                    title: 'Espectáculo de Magia',
+                    img: 'images/espectaculo-magia-infantil-cerca.webp',
+                    desc: 'Un mago profesional que hará las delicias de los más pequeños (y no tan pequeños). Show infantil con ilusiones, humor y participación del público.',
+                    pricing: [
+                        { name: 'Show infantil 50 min (5–11 años)', value: '265€' },
+                        { name: 'Magia de cerca evento privado 1h', value: '215€' },
+                    ]
+                },
+                '10': {
+                    title: 'Alquiler de Sala 215m²',
+                    img: 'images/alquiler-sala-eventos-215m2.webp',
+                    desc: 'Sala privada de 215m² completamente equipada: Chikipark, futbolín, diana, disfraces, TV, WiFi, Bluetooth, 52 sillas + 6 mesas adultos, 15 sillas + 5 mesas infantiles, nevera, microondas, cafetera, botellero y luces de fiesta.',
+                    pricing: [
+                        { name: 'L–J y V mañana (10:30–14:30)', value: '160€ · limpieza incluida' },
+                        { name: 'V tarde + S y D mañana/tarde', value: '180€ + 20€ limpieza' },
+                        { name: 'V noche y S noche (21:30–01:30)', value: '250€ + 20€ limpieza' },
+                        { name: 'Festivos mañana (12:00–19:00)', value: '390€' },
+                        { name: 'Festivos noche (20:00–03:00)', value: '420€' },
+                        { name: 'Hora extra', value: '30€' },
+                        { name: 'Entrada 1h antes', value: 'Disponible' },
+                        { name: 'Fianza L–D', value: '40€' },
+                        { name: 'Fianza V–S noche', value: '80€' },
+                        { name: 'Fianza festivos', value: '100€' },
+                        { name: '+ Pack Catering Básico', value: '50€ (opcional)' },
+                    ]
+                },
+                '11': {
+                    title: 'La Pilar – Animación para Adultos',
+                    img: 'images/la-pilar-animacion-adultos-espai-unic.webp',
+                    desc: 'Una sesión guionizada de animación teatral diseñada exclusivamente para adultos. La Pilar lleva a los invitados por una experiencia interactiva con momentos de humor, improvisación y complicidad. Perfecta para despedidas de soltero/a, cumpleaños adultos y eventos de empresa.',
+                    pricing: [
+                        { name: 'Sesión guionizada completa', value: '280€' },
+                        { name: 'Duración aproximada', value: '~90 minutos' },
+                        { name: 'Público', value: 'Exclusivo adultos' },
+                        { name: 'Personalización', value: 'Guión adaptado al evento' },
+                        { name: 'Incluye', value: 'Animación, improvisación y recursos teatrales' },
+                    ]
+                },
+            };
+
+            const s = services[sid];
+            if (s) {
+                document.getElementById('serviceTitle').textContent = s.title;
+                document.getElementById('serviceImage').src = s.img;
+                document.getElementById('serviceImage').alt = s.title + ' – Espai Únic';
+                document.getElementById('serviceDesc').textContent = s.desc;
+
+                const container = document.getElementById('pricingItems');
+                s.pricing.forEach(item => {
+                    const div = document.createElement('div');
+                    div.className = 'price-item';
+                    div.innerHTML = `<span class="price-name">${item.name}</span><span class="price-value">${item.value}</span>`;
+                    container.appendChild(div);
+                });
+
+                // Actualizar botón de reserva WhatsApp
+                const reserveBtn = document.getElementById('reserveBtn');
+                if (reserveBtn) {
+                    const phone = '34695613985';
+                    const message = `Hola Espai unic, estoy interesado en reservar el servicio ${s.title}. ¿Podrias decirme dias y horas disponibles?`;
+                    reserveBtn.href = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+                }
+            }
+        });
+    </script>
+
+</body>
+
+</html>
